@@ -11,6 +11,7 @@ gem 'sqlite3'
 gem 'capistrano'
 gem 'capistrano-ext'
 gem 'capistrano_colors'
+gem 'rvm-capistrano'
 gem 'execjs'
 gem 'therubyracer'
 

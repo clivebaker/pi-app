@@ -48,7 +48,7 @@ namespace :deploy do
   task :start do ; end
   task :stop do ; end
   task :restart, :roles => :app, :except => { :no_release => true } do
-    run "sudo RAILS_ENV=#{rails_env} #{File.join(current_path,"script","delayed_job")} restart"
+#    run "sudo RAILS_ENV=#{rails_env} #{File.join(current_path,"script","delayed_job")} restart"
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
 
