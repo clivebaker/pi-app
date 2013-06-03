@@ -6,5 +6,10 @@ Project using proximity sensors (Range Finders)
 == Rails 3.2.13 application
 
 1. Raspberry PI and the PI Face:
-       Follow the instructions found at ...
+Follow the instructions found at ...
+		https://github.com/blakejakopovic/piface
+
+		$ sudo modprobe spi_bcm2708
+
+		$ sudo chown `id -u`.`id -g` /dev/spidev0.*
 
