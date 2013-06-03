@@ -1,6 +1,7 @@
 require 'capistrano_colors'
 require 'bundler/capistrano'
 require 'capistrano/ext/multistage'
+require 'rvm/capistrano'
 
 set :stages, %w(production)
 set :default_stage, "production"
@@ -34,9 +35,9 @@ set :deploy_via, :remote_cache
 
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-role :web, "pio"                          # Your HTTP server, Apache/etc
-role :app, "pio"                          # This may be the same as your `Web` server
-role :db,  "pio", :primary => true # This is where Rails migrations will run
+role :web, "pi"                          # Your HTTP server, Apache/etc
+role :app, "pi"                          # This may be the same as your `Web` server
+role :db,  "pi", :primary => true # This is where Rails migrations will run
 #role :db,  "picits"
 
 # if you're still using the script/reaper helper you will need
