@@ -13,7 +13,7 @@ gem 'capistrano-ext'
 gem 'capistrano_colors'
 gem 'rvm-capistrano'
 #gem 'execjs'
-gem 'therubyracer'
+#gem 'therubyracer'
 
 
 group :production do
