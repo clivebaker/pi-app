@@ -50,7 +50,7 @@ namespace :deploy do
   task :stop do ; end
   task :restart, :roles => :app, :except => { :no_release => true } do
 #    run "sudo RAILS_ENV=#{rails_env} #{File.join(current_path,"script","delayed_job")} restart"
-    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+#    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
 
   after 'deploy:update_code', 'deploy:bundle_install'
